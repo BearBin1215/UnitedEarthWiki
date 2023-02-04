@@ -3,6 +3,36 @@
  */
 
 
+/* 右浮导航
+---------------------------------------- */
+.right-nav {
+    width: 250px;
+    float: right;
+    clear: right;
+    border: 3px solid #2A52BE;
+    padding: .35em;
+    text-align: center;
+}
+
+.right-nav-name {
+    padding: .1em;
+    border: 1px solid #ccc;
+    background-color: #eaeff2;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.right-nav-title {
+    margin-top: .25em;
+    padding: .1em;
+    background-color: #eaeff2;
+    font-weight: 700;
+}
+
+.right-nav-content {
+    font-size: .9em;
+}
+
 /* 模板文档
 ---------------------------------------- */
 .template-doc {
