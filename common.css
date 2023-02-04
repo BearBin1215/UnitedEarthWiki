@@ -5,6 +5,7 @@
 :root {
     --global-border-color: #2a52be;
     --global-background-color: #2a52be;
+    --notebox-background-color: #eaeff2;
 }
 
 /* 右浮导航
@@ -85,8 +86,29 @@
     border: 2px solid var(--global-border-color);
 }
 
+.pnbox {
+    border: 2px solid var(--global-border-color);
+}
+
 .anbox>div {
-    background-color: #eaeff2;
-    margin: 4px;
+    background-color: var(--notebox-background-color);
+    margin: .3em;
     padding: .8em;
+}
+
+.pnbox>div {
+    display: flex;
+    align-items: center;
+    margin: .3em;
+    padding: .3em;
+    background-color: var(--notebox-background-color);
+}
+
+.pnbox-left,
+.pnbox-right {
+    padding: 0.1em 0.4em;
+}
+
+.pnbox-left img {
+    width: 70px;
 }
