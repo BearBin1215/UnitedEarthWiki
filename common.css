@@ -86,14 +86,14 @@
     border: 2px solid var(--global-border-color);
 }
 
-.pnbox {
-    border: 2px solid var(--global-border-color);
-}
-
 .anbox>div {
     background-color: var(--notebox-background-color);
     margin: .3em;
     padding: .8em;
+}
+
+.pnbox {
+    border: 2px solid var(--global-border-color);
 }
 
 .pnbox>div {
@@ -106,9 +106,13 @@
 
 .pnbox-left,
 .pnbox-right {
-    padding: 0.1em 0.4em;
+    padding: .05em .3em;
 }
 
 .pnbox-left img {
     width: 70px;
+}
+
+.pnbox-right {
+    flex-grow: 1;
 }
