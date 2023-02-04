@@ -2,6 +2,10 @@
  * 全站css，应用于所有用户的所有皮肤。
  */
 
+:root {
+    --global-border-color: #2a52be;
+    --global-bg-color: #2a52be;
+}
 
 /* 右浮导航
 ---------------------------------------- */
@@ -9,9 +13,9 @@
     width: 250px;
     float: right;
     clear: right;
-    margin:0 0 .3em .4em;
+    margin: 0 0 .3em .4em;
     padding: .35em;
-    border: 3px solid #2A52BE;
+    border: 3px solid var(--global-border-color);
     border-radius: 5px;
     text-align: center;
 }
@@ -19,8 +23,9 @@
 .right-nav-name {
     padding: .1em;
     border: 1px solid #ccc;
-    background-color: #eaeff2;
+    background-color: var(--global-bg-color);
     border-radius: 3px;
+    color: #fff;
     font-size: 1.2em;
     font-weight: 700;
 }
@@ -28,8 +33,9 @@
 .right-nav-title {
     margin-top: .25em;
     padding: .1em;
-    background-color: #eaeff2;
+    background-color: var(--global-bg-color);
     border-radius: 3px;
+    color: #fff;
     font-weight: 700;
 }
 
@@ -43,7 +49,7 @@
     clear: both;
     margin-top: .7em;
     padding: 1em;
-    border: 1px solid #2a52be;
+    border: 1px solid var(--global-border-color);
     border-radius: .5em;
     box-shadow: .1em .1em .2em rgba(127, 127, 127, .2);
     background: rgba(42, 82, 190, .02);
@@ -76,7 +82,7 @@
 
 /* 条目提示模板（Article note box） */
 .anbox {
-    border: 2px solid #2a52be;
+    border: 2px solid var(--global-border-color);
 }
 
 .anbox>div {
