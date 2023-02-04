@@ -2,21 +2,59 @@
  * 全站css，应用于所有用户的所有皮肤。
  */
 
-:root {
+
+/* 通用
+---------------------------------------- */
+
+ :root {
     --global-border-color: #2a52be;
+    --global-border: 3px solid var(--global-border-color);
     --global-background-color: #2a52be;
     --notebox-background-color: #eaeff2;
 }
+
+.right-float {
+    float: right;
+    clear: right;
+    margin: 0 0 .3em .4em;
+}
+
+
+/* 信息栏
+---------------------------------------- */
+#infobox {
+    border: var(--global-border);
+    border-radius: .5em;
+    background-color: #fff;
+}
+
+#infobox .infobox-title {
+    font-size: 1.2em;
+}
+
+#infobox .infobox-image img {
+    width: 250px;
+}
+
+#infobox th,
+#infobox td {
+    text-align: center;
+}
+
+#infobox th {
+    border-radius: .3em;
+    background-color: var(--global-background-color);
+    color: #fff;
+    font-weight: 700;
+}
+
 
 /* 右浮导航
 ---------------------------------------- */
 .right-nav {
     width: 250px;
-    float: right;
-    clear: right;
-    margin: 0 0 .3em .4em;
     padding: .35em;
-    border: 3px solid var(--global-border-color);
+    border: var(--global-border);
     border-radius: .5em;
     text-align: center;
 }
