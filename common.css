@@ -12,10 +12,11 @@ td.infobox-image img {
 /* 模板文档
 ---------------------------------------- */
 .template-doc {
+    margin-top: .7em;
+    padding: 1em;
     border: 1px solid #2a52be;
     border-radius: .5em;
     box-shadow: .1em .1em .2em rgba(127, 127, 127, .2);
-    padding: 1em;
     background: rgba(42, 82, 190, .02)
 }
 
