@@ -1,0 +1,56 @@
+/**
+ * 全站css，应用于所有用户的所有皮肤。
+ */
+
+/* 信息栏图片限宽
+---------------------------------------- */
+td.infobox-image img {
+    width: 300px;
+}
+
+
+/* 模板文档
+---------------------------------------- */
+.template-doc {
+    border: 1px solid #2a52be;
+    border-radius: .5em;
+    box-shadow: .1em .1em .2em rgba(127, 127, 127, .2);
+    padding: 1em;
+    background: rgba(42, 82, 190, .02)
+}
+
+.template-doc-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.template-doc-title {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.template-doc-link {
+    font-size: .75em;
+}
+
+.template-doc-link,
+.template-doc-link a,
+.template-doc-link a:visited {
+    color: #0645ad !important;
+}
+
+
+/* 各类提示模板
+---------------------------------------- */
+
+/* 条目提示模板（Article note box） */
+.anbox {
+    border: 2px solid #2a52be;
+}
+
+.anbox>div {
+    background-color: #eaeff2;
+    margin: 4px;
+    padding: .8em
+}
