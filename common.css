@@ -9,8 +9,9 @@
     width: 250px;
     float: right;
     clear: right;
-    border: 3px solid #2A52BE;
+    margin:0 0 .3em .4em;
     padding: .35em;
+    border: 3px solid #2A52BE;
     text-align: center;
 }
 
@@ -36,6 +37,7 @@
 /* 模板文档
 ---------------------------------------- */
 .template-doc {
+    clear: both;
     margin-top: .7em;
     padding: 1em;
     border: 1px solid #2a52be;
