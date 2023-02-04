@@ -4,7 +4,7 @@
 
 :root {
     --global-border-color: #2a52be;
-    --global-bg-color: #2a52be;
+    --global-background-color: #2a52be;
 }
 
 /* 右浮导航
@@ -16,25 +16,25 @@
     margin: 0 0 .3em .4em;
     padding: .35em;
     border: 3px solid var(--global-border-color);
-    border-radius: 5px;
+    border-radius: .5em;
     text-align: center;
 }
 
 .right-nav-name {
+    margin-bottom: .13em;
     padding: .1em;
-    border: 1px solid #ccc;
-    background-color: var(--global-bg-color);
-    border-radius: 3px;
+    background-color: var(--global-background-color);
+    border-radius: .3em;
     color: #fff;
     font-size: 1.2em;
     font-weight: 700;
 }
 
 .right-nav-title {
-    margin-top: .25em;
+    margin: 0.12em 0;
     padding: .1em;
-    background-color: var(--global-bg-color);
-    border-radius: 3px;
+    background-color: var(--global-background-color);
+    border-radius: .3em;
     color: #fff;
     font-weight: 700;
 }
