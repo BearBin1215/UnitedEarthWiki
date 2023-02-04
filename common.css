@@ -12,6 +12,7 @@
     margin:0 0 .3em .4em;
     padding: .35em;
     border: 3px solid #2A52BE;
+    border-radius: 5px;
     text-align: center;
 }
 
@@ -19,6 +20,7 @@
     padding: .1em;
     border: 1px solid #ccc;
     background-color: #eaeff2;
+    border-radius: 3px;
     font-size: 1.2em;
     font-weight: 700;
 }
@@ -27,6 +29,7 @@
     margin-top: .25em;
     padding: .1em;
     background-color: #eaeff2;
+    border-radius: 3px;
     font-weight: 700;
 }
 
