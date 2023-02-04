@@ -6,7 +6,7 @@
 /* 通用
 ---------------------------------------- */
 
- :root {
+:root {
     --global-border-color: #2a52be;
     --global-border: 3px solid var(--global-border-color);
     --global-background-color: #2a52be;
@@ -24,6 +24,7 @@
 ---------------------------------------- */
 #infobox {
     border: var(--global-border);
+    width: 275px;
     border-radius: .5em;
     background-color: #fff;
 }
@@ -33,7 +34,7 @@
 }
 
 #infobox .infobox-image img {
-    width: 250px;
+    width: 275px;
 }
 
 #infobox th,
@@ -52,7 +53,7 @@
 /* 右浮导航
 ---------------------------------------- */
 .right-nav {
-    width: 250px;
+    width: 270px;
     padding: .35em;
     border: var(--global-border);
     border-radius: .5em;
