@@ -17,7 +17,7 @@ td.infobox-image img {
     border: 1px solid #2a52be;
     border-radius: .5em;
     box-shadow: .1em .1em .2em rgba(127, 127, 127, .2);
-    background: rgba(42, 82, 190, .02)
+    background: rgba(42, 82, 190, .02);
 }
 
 .template-doc-top {
@@ -53,5 +53,5 @@ td.infobox-image img {
 .anbox>div {
     background-color: #eaeff2;
     margin: 4px;
-    padding: .8em
+    padding: .8em;
 }
