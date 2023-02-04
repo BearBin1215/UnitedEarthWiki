@@ -5,7 +5,6 @@ $(function () {
         sysop: {list: [], class: "markrights-sysop"},
         'interface-admin': {list: [], class: "markrights-interface-admin"},
         patroller: {list: [], class: "markrights-patroller"},
-        confirmed: {list: [], class: "markrights-confirmed"},
         autoconfirmed: {list: [], class: "markrights-autoconfirmed"},
         bot: {list: [], class: "markrights-bot"},
     };
