@@ -61,11 +61,11 @@
 
 #infobox th,
 #infobox td {
+    border-radius: var(--box-inner-border-radius);
     text-align: center;
 }
 
 #infobox th {
-    border-radius: var(--box-inner-border-radius);
     background-color: var(--global-background-color);
     color: #fff;
     font-weight: 700;
@@ -116,6 +116,12 @@
     padding: .1em .2em;
 }
 
+.navbox-bottom {
+    background-color: var(--global-background-color);
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
 
 /* 右浮导航
 ---------------------------------------- */
