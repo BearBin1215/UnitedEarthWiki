@@ -29,13 +29,15 @@ function p._main(args, frame)
 
     local i = 1
     while args['left' .. i] do
-        infobox
-            :tag('tr')
-            :tag('th')
-            :wikitext(args['left' .. i])
-            :done()
-            :tag('td')
-            :wikitext(args['right' .. i])
+        if args['right' .. i] then
+            infobox
+                :tag('tr')
+                :tag('th')
+                :wikitext(args['left' .. i])
+                :done()
+                :tag('td')
+                :wikitext(args['right' .. i])
+        end
         i = i + 1
     end
 
