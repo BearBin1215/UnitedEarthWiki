@@ -24,13 +24,13 @@
 ---------------------------------------- */
 #infobox {
     border: var(--global-border);
-    width: 275px;
     border-radius: .5em;
     background-color: #fff;
 }
 
 #infobox .infobox-title {
     font-size: 1.2em;
+    min-width: 275px;
 }
 
 #infobox .infobox-image img {
