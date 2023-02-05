@@ -2,10 +2,10 @@
 $(function () {
     var containerNode;
     if (mw.config.get("wgNamespaceNumber") === -1) {
-        containerNode = $('<span class="special-page"/>');
+        containerNode = $('<span/>');
         containerNode.append("特殊页面");
     } else {
-        containerNode = $('<a class="purge-button"/>');
+        containerNode = $('<a title="清除本页缓存" />');
         var statusNode = $('<span/>').text('清除缓存'),
             runningStatus = false;
         containerNode.attr("href", 'javascript:void(0);');
@@ -51,5 +51,6 @@ $(function () {
     } else if (userSkin === "citizen") {
         li = $('<li id="purge-cache-button"/>').appendTo("#p-cactions>ul");
         li.append(containerNode);
+        $('head').append('<style>#purge-cache-button>a::before{content:"〇";width:20px;height:20px;display:flex;justify-content:center;align-items:center;font-size:20px;font-weight:700}</style>')
     }
 });
