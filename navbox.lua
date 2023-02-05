@@ -10,7 +10,7 @@ function p._box(args, frame)
     local navbox = mw.html.create('table') --外层
 
     navbox
-        :addClass('navbox')
+        :addClass('navbox mw-collapsible')
         :tag('tr')
         :tag('th')
         :addClass('navbox-name')

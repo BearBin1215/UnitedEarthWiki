@@ -104,8 +104,13 @@
     font-size: 1.1em;
 }
 
+.navbox .mw-collapsible-text {
+    color: #fff;
+}
+
 .navbox-name,
-.navbox-title {
+.navbox-title,
+.navbox-bottom {
     background-color: var(--global-background-color);
     color: #fff;
     border-radius: var(--box-inner-border-radius);
@@ -117,8 +122,6 @@
 }
 
 .navbox-bottom {
-    background-color: var(--global-background-color);
-    color: #fff;
     text-align: center;
     font-style: italic;
 }
