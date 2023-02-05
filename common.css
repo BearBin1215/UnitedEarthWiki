@@ -100,6 +100,10 @@
     border-spacing: 3px;
 }
 
+.navbox-name {
+    font-size: 1.1em;
+}
+
 .navbox-name,
 .navbox-title {
     background-color: var(--global-background-color);
