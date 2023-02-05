@@ -28,7 +28,7 @@
 ---------------------------------------- */
 .catnav {
     border: 1px solid var(--global-border-color);
-    padding: 0.2em 0.3em;
+    padding: 0.2em 0.4em;
     background: rgba(42, 82, 190, .02);
     border-radius: .3em;
 }
