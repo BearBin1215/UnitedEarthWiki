@@ -19,6 +19,20 @@
     margin: 0 0 .3em .4em;
 }
 
+.mw-parser-output h2 {
+    font-weight: 700;
+}
+
+
+/* 导航条
+---------------------------------------- */
+.catnav {
+    border: 1px solid var(--global-border-color);
+    padding: 0.2em 0.3em;
+    background: rgba(42, 82, 190, .02);
+    border-radius: .3em;
+}
+
 
 /* 信息栏
 ---------------------------------------- */
@@ -135,9 +149,10 @@
 
 
 /* 各类提示模板
+ * 条目提示模板（Article note box）
+ * 方针提示模板（Policy note box）
+ * 警告模板（Warning note box）
 ---------------------------------------- */
-
-/* 条目提示模板（Article note box） */
 .anbox {
     border: 2px solid var(--global-border-color);
 }
@@ -152,7 +167,12 @@
     border: 2px solid var(--global-border-color);
 }
 
-.pnbox>div {
+.wnbox {
+    border: 2px solid #9c0000;
+}
+
+.pnbox>div,
+.wnbox>div {
     display: flex;
     align-items: center;
     margin: .3em;
@@ -161,14 +181,34 @@
 }
 
 .pnbox-left,
-.pnbox-right {
+.pnbox-right,
+.wnbox-left,
+.wnbox-right {
     padding: .05em .3em;
 }
 
-.pnbox-left img {
+.pnbox-left img,
+.wnbox-left img {
     width: 70px;
 }
 
-.pnbox-right {
+.pnbox-right,
+.wnbox-right {
     flex-grow: 1;
+}
+
+.warning-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.8em;
+    height: 1.8em;
+    font: 700 1.8em consolas, JetBrains Mono, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Courier, monospace;
+    line-height: 100%;
+    border: 3px solid #9c0000;
+    border-radius: 50%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
