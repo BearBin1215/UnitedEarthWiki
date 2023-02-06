@@ -1,0 +1,16 @@
+/**
+ * 本页中的样式通过小工具进行加载，仅对vector-2022用户生效。
+ */
+
+
+@media screen and (max-width: 768px) {
+    .nomobile {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .mobileonly {
+        display: none !important;
+    }
+}

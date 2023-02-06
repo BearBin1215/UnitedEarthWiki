@@ -1,0 +1,8 @@
+/**
+ * 本页中的样式通过小工具进行加载，仅对旧版vector用户生效。
+ */
+
+
+.mobileonly {
+    display: none !important;
+}

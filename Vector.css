@@ -1,0 +1,14 @@
+/**
+ * 使用了旧版Vector和2022版Vector皮肤的用户都会加载本CSS。
+ * 为适应Vector和Vector 2022，本页面主要内容转移至[[MediaWiki:Gadget-vector-old.css]]和[[MediaWiki:Gadget-vector-2022.css]]，仅共通内容保存此处。
+ */
+
+
+.mw-editsection span.in-page-edit-article-link-group {
+    display: inline-flex;
+    padding-left: .3em;
+}
+
+.mw-editsection span.in-page-edit-article-link-group::after {
+    display: none;
+}

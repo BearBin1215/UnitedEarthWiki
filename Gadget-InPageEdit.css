@@ -1,0 +1,23 @@
+.skin-citizen .mw-editsection .in-page-edit-article-link-group::before {
+    display: none;
+}
+
+.skin-citizen .mw-editsection .in-page-edit-article-link-group {
+    display: flex;
+    line-height: 26px;
+}
+
+.skin-citizen .mw-editsection .in-page-edit-article-link-group a {
+    padding: 0 var(--space-xxs);
+    color: var(--color-base);
+    transition: opacity 100ms ease;
+}
+
+.skin-citizen span.in-page-edit-article-link-group {
+    display: inline-flex;
+    line-height: 26px;
+}
+
+.skin-citizen .in-page-edit .wikiEditor-ui-top::before {
+    display: none;
+}

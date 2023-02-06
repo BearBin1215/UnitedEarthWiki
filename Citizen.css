@@ -1,0 +1,23 @@
+/**
+ * Citizen皮肤的全站CSS
+ */
+
+
+/* nomobile和mobileonly
+---------------------------------------- */
+@media screen and (max-width: 768px) {
+    .nomobile {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .mobileonly {
+        display: none !important;
+    }
+}
+
+
+.in-page-edit .wikiEditor-ui-top::before {
+    display: none;
+}
