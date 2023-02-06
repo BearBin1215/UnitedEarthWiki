@@ -220,14 +220,26 @@
  * 方针提示模板（Policy note box）
  * 警告模板（Warning note box）
 ---------------------------------------- */
+.nbox>div {
+    display: flex;
+    align-items: center;
+    margin: .3em;
+    padding: .3em;
+    background-color: var(--notebox-background-color);
+}
+
+.nbox ul,
+.nbox p {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
 .anbox {
     border: 2px solid var(--global-border-color);
 }
 
 .anbox>div {
-    background-color: var(--notebox-background-color);
-    margin: .3em;
-    padding: .8em;
+    padding: .4em .8em;
 }
 
 .pnbox {
@@ -238,29 +250,32 @@
     border: 2px solid #9c0000;
 }
 
-.pnbox>div,
-.wnbox>div {
-    display: flex;
-    align-items: center;
-    margin: .3em;
-    padding: .3em;
-    background-color: var(--notebox-background-color);
+.tnbox {
+    border: 2px solid #008B8B;
+}
+
+.tnbox>div {
+    background-color: #D9EEEE;
 }
 
 .pnbox-left,
 .pnbox-right,
 .wnbox-left,
-.wnbox-right {
+.wnbox-right,
+.tnbox-left,
+.tnbox-right {
     padding: .05em .3em;
 }
 
 .pnbox-left img,
-.wnbox-left img {
+.wnbox-left img,
+.tnbox-left img {
     width: 70px;
 }
 
 .pnbox-right,
-.wnbox-right {
+.wnbox-right,
+.tnbox-right {
     flex-grow: 1;
 }
 
