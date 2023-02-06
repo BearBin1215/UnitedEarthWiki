@@ -1,3 +1,12 @@
+/**
+ * Wikiplus的配套样式支持
+ * Citizen的页顶编辑栏部分拆分至[[MediaWiki:Citizen.css]]，便于整合。
+ */
+
+
+
+/* Citizen
+---------------------------------------- */
 .skin-citizen .mw-editsection-bracket,
 .skin-citizen .mw-editsection-divider {
     display: none !important;
@@ -10,9 +19,13 @@
 
 .skin-citizen a.Wikiplus-Edit-SectionBtn {
     color: var(--color-base);
-    line-height: 1;
+    height: 18px;
+    line-height: 18px;
 }
 
+
+/* Vector 2022
+---------------------------------------- */
 .skin-vector-2022 #p-views ul.vector-menu-content-list {
     display: flex;
 }
