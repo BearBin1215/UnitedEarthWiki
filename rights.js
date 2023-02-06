@@ -4,6 +4,7 @@ $(function () {
         suppress: {list: [], class: "markrights-suppress"},
         sysop: {list: [], class: "markrights-sysop"},
         'interface-admin': {list: [], class: "markrights-interface-admin"},
+        'widget-editor': {list: [], class: "markrights-widget-editor"},
         patroller: {list: [], class: "markrights-patroller"},
         autoconfirmed: {list: [], class: "markrights-autoconfirmed"},
         bot: {list: [], class: "markrights-bot"},
@@ -38,22 +39,22 @@ $(function () {
             var decode1 = function (username) {
                 return decodeURIComponent((function (u) {
                     try {
-                        return decodeURIComponent(u.replace('%E7%94%A8%E6%88%B7:', '').replace(/_/g, ' '));
+                        return decodeURIComponent(u.replace('%E7%94%A8%E6%88%B7:', '').replace(/_/g, ' ')).replace('index.php?title=', '').replace('&action=edit&redlink=1', '');
                     } catch (e) {
-                        return u.replace('%E7%94%A8%E6%88%B7:', '').replace(/_/g, ' ').replace(/%(?!\d+)/g, '%25');
+                        return u.replace('%E7%94%A8%E6%88%B7:', '').replace(/_/g, ' ').replace(/%(?!\d+)/g, '%25').replace('index.php?title=', '').replace('&action=edit&redlink=1', '');
                     }
                 })(username))
             };
             if (username) {
                 return decode1(username);
             }
-            username = url.match(/%E7%94%A8%E6%88%B7:(.+?)$/);
+            username = url.match(/.*%E7%94%A8%E6%88%B7:(.+)$/);
             var decode2 = function (username) {
                 return decodeURIComponent((function (u) {
                     try {
-                        return decodeURIComponent(u.replace(/_/g, ' '));
+                        return decodeURIComponent(u.replace(/_/g, ' ').replace('index.php?title=', '').replace('&action=edit&redlink=1', ''));
                     } catch (e) {
-                        return u.replace(/_/g, ' ').replace(/%(?!\d+)/g, '%25');
+                        return u.replace(/_/g, ' ').replace(/%(?!\d+)/g, '%25').replace('index.php?title=', '').replace('&action=edit&redlink=1', '');
                     }
                 })(username))
             };
