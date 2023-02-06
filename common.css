@@ -240,6 +240,7 @@
 
 .anbox>div {
     padding: .4em .8em;
+    display: block;
 }
 
 .pnbox {

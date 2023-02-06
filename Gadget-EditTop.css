@@ -1,13 +1,11 @@
-.skin-citizen #ca-editTopSection a {
-    color: var(--color-base);
-    display: flex;
-    align-items: center;
-    padding: var(--space-xs) var(--space-sm);
-    border-radius: var(--border-radius--medium);
-    transition: background 100ms ease, color 100ms ease;
+/* 通用
+---------------------------------------- */
+#ca-editTopSection .Wikiplus-Edit-SectionBtn::after {
+    content: "序言";
 }
 
-
+/* Vector
+---------------------------------------- */
 .skin-vector #ca-editTopSection .mw-editsection {
     font-family: inherit;
     font-size: inherit;
@@ -21,15 +19,13 @@
     display: none !important;
 }
 
-.skin-vector #ca-editTopSection .Wikiplus-Edit-SectionBtn::after {
-    content: "序言";
-}
-
 .skin-vector #ca-ve-edit {
     display: none;
 }
 
 
+/* Vector 2022
+---------------------------------------- */
 .skin-vector-2022 #ca-editTopSection {
     margin: 0;
 }

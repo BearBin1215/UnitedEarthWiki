@@ -21,3 +21,43 @@
 .in-page-edit .wikiEditor-ui-top::before {
     display: none;
 }
+
+/* Wikiplus和编辑序言支持
+---------------------------------------- */
+#p-views>ul {
+    align-items: center;
+}
+
+#p-views>ul .mw-editsection-divider {
+    display: none !important;
+}
+
+#p-views a {
+    line-height: 20px;
+    padding: .5rem .7rem;
+}
+
+#ca-editTopSection .mw-editsection::before {
+    display: none;
+}
+
+#Wikiplus-Edit-TopBtn span,
+#ca-editTopSection span {
+    margin-left: 0;
+}
+
+#Wikiplus-Edit-TopBtn a,
+#ca-editTopSection a {
+    display: block;
+    box-sizing: content-box;
+    height: 20px;
+    color: var(--color-base);
+    border-radius: var(--border-radius--medium);
+    transition: background 100ms ease, color 100ms ease;
+}
+
+#Wikiplus-Edit-TopBtn a:hover,
+#ca-editTopSection a:hover {
+    background-color: var(--background-color-quiet--hover);
+    color: var(--color-base--emphasized);
+}
