@@ -1,0 +1,51 @@
+.skin-citizen #ca-editTopSection a {
+    color: var(--color-base);
+    display: flex;
+    align-items: center;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--border-radius--medium);
+    transition: background 100ms ease, color 100ms ease;
+}
+
+
+.skin-vector #ca-editTopSection .mw-editsection {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 400;
+    margin-left: 0;
+    vertical-align: inherit;
+    line-height: inherit;
+}
+
+.skin-vector #ca-editTopSection .mw-editsection-divider {
+    display: none !important;
+}
+
+.skin-vector #ca-editTopSection .Wikiplus-Edit-SectionBtn::after {
+    content: "序言";
+}
+
+.skin-vector #ca-ve-edit {
+    display: none;
+}
+
+
+.skin-vector-2022 #ca-editTopSection {
+    margin: 0;
+}
+
+.skin-vector-2022 #ca-editTopSection .mw-editsection {
+    display: flex;
+    height: 100%;
+}
+
+.skin-vector-2022 #ca-editTopSection a {
+    display: block;
+    padding: 18px 0 5px 0;
+    margin: 0 8px -1px 8px;
+}
+
+.skin-vector-2022 #ca-editTopSection a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
