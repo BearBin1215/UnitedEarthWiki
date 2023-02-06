@@ -5,7 +5,7 @@
     align-items: center;
     padding: var(--space-xs) var(--space-sm);
     border-radius: var(--border-radius--medium);
-    transition: background 100ms ease,color 100ms ease;
+    transition: background 100ms ease, color 100ms ease;
 }
 
 .skin-citizen #Wikiplus-Edit-TopBtn a {
