@@ -1,0 +1,29 @@
+.markrights-bureaucrat:after {
+	color: black;
+	content: "政";
+}
+
+.markrights-suppress:after {
+	color: purple;
+	content: "监";
+}
+
+.markrights-sysop:after {
+	color: mediumvioletred;
+	content: "管";
+}
+
+.markrights-interface-admin:after {
+	color: mediumvioletred;
+	content: "界";
+}
+
+.markrights-patroller:after {
+	color: sienna;
+	content: "巡";
+}
+
+.markrights-bot:after {
+	color: blue;
+	content: "机";
+}
