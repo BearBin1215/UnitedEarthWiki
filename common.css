@@ -3,9 +3,8 @@
  */
 
 
-/* 通用
+/* 全局变量
 ---------------------------------------- */
-
 :root {
     --global-border-color: #2a52be;
     --global-border: 3px solid var(--global-border-color);
@@ -16,6 +15,9 @@
     --box-inner-border-radius: 0.3em;
 }
 
+
+/* 页面基础
+---------------------------------------- */
 .mw-parser-output h2 {
     font-weight: 700;
 }
@@ -24,7 +26,15 @@
     margin-left: 1.4em;
 }
 
+.mw-parser-output dd>ol,
+.mw-parser-output dd>ul,
+.mw-parser-output dd>dl {
+    margin-top: 0.2em;
+}
 
+
+/* 常用附加类
+---------------------------------------- */
 .right-float {
     float: right;
     clear: right;
@@ -241,6 +251,10 @@
 .anbox>div {
     padding: .4em .8em;
     display: block;
+}
+
+.anbox hr {
+    margin: .4rem 0;
 }
 
 .pnbox {
