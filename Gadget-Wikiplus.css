@@ -23,6 +23,10 @@
     line-height: 18px;
 }
 
+.skin-citizen a.Wikiplus-Edit-SectionBtn:hover {
+    color: var(--color-base--emphasized);
+}
+
 
 /* Vector 2022
 ---------------------------------------- */
