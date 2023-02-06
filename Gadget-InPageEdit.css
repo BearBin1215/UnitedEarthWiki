@@ -21,3 +21,9 @@
 .skin-citizen .in-page-edit .wikiEditor-ui-top::before {
     display: none;
 }
+
+
+
+.skin-vector .mw-editsection span.in-page-edit-article-link-group {
+    display: inline;
+}
