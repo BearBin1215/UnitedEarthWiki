@@ -132,6 +132,11 @@
     border-spacing: 3px;
 }
 
+.navbox .navbox-edit,
+.navbox .mw-collapsible-toggle {
+    font-size: smaller
+}
+
 .navbox-edit {
     float: left;
 }
@@ -211,6 +216,7 @@
 /* 模板文档
 ---------------------------------------- */
 .template-doc {
+    display: flow-root;
     clear: both;
     margin-top: .7em;
     padding: 1em;
