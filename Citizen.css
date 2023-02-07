@@ -3,6 +3,16 @@
  */
 
 
+/* 页面基础
+---------------------------------------- */
+.mw-references-wrap {
+    font-size: inherit;
+}
+
+.oo-ui-defaultOverlay {
+    z-index: 99999;
+}
+
 /* nomobile和mobileonly
 ---------------------------------------- */
 @media screen and (max-width: 768px) {
