@@ -13,14 +13,14 @@
 	content: "管";
 }
 
-.markrights-interface-admin:after {
-	color: mediumvioletred;
-	content: "界";
-}
-
 .markrights-patroller:after {
 	color: sienna;
 	content: "巡";
+}
+
+.markrights-interface-admin:after {
+	color: mediumvioletred;
+	content: "界";
 }
 
 .markrights-bot:after {
