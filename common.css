@@ -132,11 +132,18 @@
     border-spacing: 3px;
 }
 
+.navbox-edit {
+    float: left;
+}
+
 .navbox-name {
     font-size: 1.1em;
 }
 
-.navbox .mw-collapsible-text {
+.navbox .mw-collapsible-text,
+.navbox .navbox-edit a,
+.navbox .navbox-edit a.external,
+.navbox .navbox-edit a:visited {
     color: #fff;
 }
 
