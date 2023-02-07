@@ -134,7 +134,9 @@
 
 .navbox .navbox-edit,
 .navbox .mw-collapsible-toggle {
-    font-size: smaller
+    font-size: smaller;
+    width: 2.7em;
+    white-space: nowrap;
 }
 
 .navbox-edit {

@@ -1,3 +1,8 @@
+/**
+ * 添加清理页面缓存按钮
+ */
+
+
 'use strict';
 $(function () {
     var containerNode;
