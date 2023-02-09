@@ -1,13 +1,13 @@
 "use strict";
 $(function () {
     var groups = {
-        bureaucrat: {list: [], class: "markrights-bureaucrat"},
-        suppress: {list: [], class: "markrights-suppress"},
-        sysop: {list: [], class: "markrights-sysop"},
-        'interface-admin': {list: [], class: "markrights-interface-admin"},
-        patroller: {list: [], class: "markrights-patroller"},
-        autoconfirmed: {list: [], class: "markrights-autoconfirmed"},
-        bot: {list: [], class: "markrights-bot"},
+        bureaucrat: { list: [], class: "markrights-bureaucrat" },
+        suppress: { list: [], class: "markrights-suppress" },
+        sysop: { list: [], class: "markrights-sysop" },
+        'interface-admin': { list: [], class: "markrights-interface-admin" },
+        patroller: { list: [], class: "markrights-patroller" },
+        autoconfirmed: { list: [], class: "markrights-autoconfirmed" },
+        bot: { list: [], class: "markrights-bot" },
     };
     var markUG = function () {
         var $users = $('a.mw-userlink:not(.mw-anonuserlink)');
@@ -113,7 +113,7 @@ $(function () {
             }).done(process);
         }
     };
-    mw.hook('wikipage.content').add(function(e) {
+    mw.hook('wikipage.content').add(function (e) {
         if (e.attr('id') === 'mw-content-text') {
             markUG();
             return;

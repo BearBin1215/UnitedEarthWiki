@@ -41,6 +41,12 @@
     margin: .3em 0 .3em .4em;
 }
 
+.columns-list>ul,
+.columns-list>ol,
+.columns-list>dl {
+    margin-top: 0;
+}
+
 
 /* 导航条
 ---------------------------------------- */
