@@ -9,6 +9,7 @@
     font-size: inherit;
 }
 
+.page-actions__card,
 .oo-ui-defaultOverlay {
     z-index: 99999;
 }

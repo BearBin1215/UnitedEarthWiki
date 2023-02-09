@@ -5,7 +5,6 @@ $(function () {
         suppress: {list: [], class: "markrights-suppress"},
         sysop: {list: [], class: "markrights-sysop"},
         'interface-admin': {list: [], class: "markrights-interface-admin"},
-        'widget-editor': {list: [], class: "markrights-widget-editor"},
         patroller: {list: [], class: "markrights-patroller"},
         autoconfirmed: {list: [], class: "markrights-autoconfirmed"},
         bot: {list: [], class: "markrights-bot"},
