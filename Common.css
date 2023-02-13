@@ -29,9 +29,27 @@
 .mw-parser-output dd>ol,
 .mw-parser-output dd>ul,
 .mw-parser-output dd>dl {
-    margin-top: 0.2em;
+    margin-top: .2em;
 }
 
+.mw-parser-output>img,
+.mw-parser-output p>img {
+    max-width: 100%;
+}
+
+.patroller-only,
+.sysop-only {
+    display: none !important;
+}
+
+.action-edit ul.permissions-errors {
+    list-style: none;
+    margin: 0;
+}
+
+.action-edit ul.permissions-errors>li:not(:last-child) {
+    margin-bottom: .8em;
+}
 
 /* 常用类
 ---------------------------------------- */
@@ -47,6 +65,32 @@
     margin-top: 0;
 }
 
+
+/* File模板
+---------------------------------------- */
+.image-nothumb {
+    display: inline-block;
+}
+
+.image-thumb {
+    border: 1px solid #b8b8b8;
+    width: fit-content;
+    padding: 3px;
+    background-color: #fcfcfc;
+}
+
+.image-thumb-inner {
+    border: 1px solid #ccc;
+}
+
+.image-thumb-inner>img,
+.image-nothumb>img {
+    max-width: 100%;
+}
+
+.image-thumb-describe {
+    padding: 0.1em 0 0 0.1em;
+}
 
 /* 导航条
 ---------------------------------------- */
@@ -143,10 +187,12 @@
     font-size: smaller;
     width: 2.7em;
     white-space: nowrap;
+    margin-top: 0.1em;
 }
 
 .navbox-edit {
     float: left;
+    text-align: left;
 }
 
 .navbox-name {
@@ -156,6 +202,7 @@
 .navbox .mw-collapsible-text,
 .navbox .navbox-edit a,
 .navbox .navbox-edit a.external,
+.navbox .navbox-edit a.external:hover,
 .navbox .navbox-edit a:visited {
     color: #fff;
 }

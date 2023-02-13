@@ -18,6 +18,10 @@
     content: none;
 }
 
+.page-actions__card a {
+    white-space: nowrap;
+}
+
 /* nomobile和mobileonly
 ---------------------------------------- */
 @media screen and (max-width: 768px) {
