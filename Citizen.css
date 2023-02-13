@@ -18,6 +18,7 @@
     content: none;
 }
 
+#page-actions-more__card,
 .page-actions__card a {
     white-space: nowrap;
 }
