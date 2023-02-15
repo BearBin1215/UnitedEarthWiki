@@ -66,6 +66,69 @@
 }
 
 
+/* Message box templates
+---------------------------------------- */
+.messagebox {
+    border: 1px solid #a2a9b1;
+    background: #f8f9fa;
+    width: 80%;
+    margin: 0 auto 1em;
+    padding: 0.2em;
+    text-align: justify;
+}
+
+.messagebox.merge {
+    border: 1px solid #cf9fff;
+    background: #f5edf5;
+    text-align: center;
+}
+
+.messagebox.cleanup {
+    border: 1px solid #9f9fff;
+    background: #efefff;
+    text-align: center;
+}
+
+.messagebox.standard-talk {
+    border: 1px solid #c0c090;
+    background: #f8eaba;
+}
+
+/* Cell sizes for ambox/tmbox/imbox/cmbox/ombox/fmbox/dmbox message boxes */
+th.mbox-text,
+td.mbox-text {
+    /* The message body cell(s) */
+    border: none;
+    padding: 0.25em 0.9em;
+    /* 0.9em left/right */
+    width: 100%;
+    /* Make all mboxes the same width regardless of text length */
+}
+
+td.mbox-image {
+    /* The left image cell */
+    border: none;
+    padding: 2px 0 2px 0.9em;
+    /* 0.9em left, 0px right */
+    text-align: center;
+}
+
+td.mbox-imageright {
+    /* The right image cell */
+    border: none;
+    padding: 2px 0.9em 2px 0;
+    /* 0px left, 0.9em right */
+    text-align: center;
+}
+
+td.mbox-empty-cell {
+    /* An empty narrow cell */
+    border: none;
+    padding: 0;
+    width: 1px;
+}
+
+
 /* File模板
 ---------------------------------------- */
 .image-nothumb {
@@ -85,7 +148,8 @@
 
 .image-thumb-inner>img,
 .image-nothumb>img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .image-thumb-describe {

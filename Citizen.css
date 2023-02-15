@@ -81,3 +81,9 @@
     background-color: var(--background-color-quiet--hover);
     color: var(--color-base--emphasized);
 }
+
+@media screen and (max-width: 500px) {
+    .skin-citizen #ca-editTopSection .Wikiplus-Edit-SectionBtn {
+        display: none;
+    }
+}
