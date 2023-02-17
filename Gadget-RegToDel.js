@@ -1,5 +1,6 @@
 /**
  * 添加挂删按钮
+ * <pre>
  */
 
 
@@ -28,3 +29,5 @@ $(function () {
     var li = $('<li id="regToDelete"/>').appendTo("#p-cactions>ul");
     li.append(regToDeleteButton);
 });
+
+/* </pre> */
