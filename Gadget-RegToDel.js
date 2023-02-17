@@ -6,7 +6,7 @@
 'use strict';
 $(function () {
     var regToDeleteButton;
-    if (mw.config.get("wgNamespaceNumber") !== -1)  {
+    if (mw.config.get("wgNamespaceNumber") !== -1 && mw.config.get("wgUserGroups").includes("patroller"))  {
         regToDeleteButton = $('<a title="标记为待删除页面" />');
         regToDeleteButton.attr("href", 'javascript:void(0);');
         regToDeleteButton.append($('<span/>').text('标记待删除'));
