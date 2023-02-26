@@ -1,0 +1,1 @@
+$('#pt-talk-alert>a').text('!');
