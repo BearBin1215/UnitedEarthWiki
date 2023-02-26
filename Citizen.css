@@ -23,6 +23,24 @@
     white-space: nowrap;
 }
 
+/* 提醒
+---------------------------------------- */
+#pt-talk-alert {
+    padding: 0;
+}
+
+
+#pt-talk-alert>a {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
 /* nomobile和mobileonly
 ---------------------------------------- */
 @media screen and (max-width: 768px) {
