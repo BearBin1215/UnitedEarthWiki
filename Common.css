@@ -10,7 +10,6 @@
     --global-border: 3px solid var(--global-border-color);
     --global-background-color: #2a52be;
     --notebox-background-color: #eaeff2;
-
     --box-border-radius: 0.5em;
     --box-inner-border-radius: 0.3em;
 }
@@ -49,6 +48,10 @@
 
 .action-edit ul.permissions-errors>li:not(:last-child) {
     margin-bottom: .8em;
+}
+
+pre, .mw-code {
+    font-family: Consolas, "JetBrains Mono", "Source Code Pro", 'Courier New', monospace;
 }
 
 /* 常用类
@@ -161,7 +164,7 @@ td.mbox-empty-cell {
 .catnav {
     border: 1px solid var(--global-border-color);
     padding: 0.2em 0.4em;
-    background: rgba(42, 82, 190, .02);
+    background: rgb(42 82 190 / 2%);
     border-radius: var(--box-inner-border-radius);
 }
 
@@ -341,8 +344,8 @@ td.mbox-empty-cell {
     padding: 1em;
     border: 1px solid var(--global-border-color);
     border-radius: var(--box-border-radius);
-    box-shadow: .1em .1em .2em rgba(127, 127, 127, .2);
-    background: rgba(42, 82, 190, .02);
+    box-shadow: .1em .1em .2em rgb(127 127 127 / 20%);
+    background: rgb(42 82 190 / 2%);
 }
 
 .template-doc-top {
@@ -447,7 +450,7 @@ td.mbox-empty-cell {
     align-items: center;
     width: 1.8em;
     height: 1.8em;
-    font: 700 1.8em consolas, JetBrains Mono, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Courier, monospace;
+    font: 700 1.8em consolas, "JetBrains Mono", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Courier, monospace;
     line-height: 100%;
     border: 3px solid #9c0000;
     border-radius: 50%;
