@@ -10,6 +10,7 @@
 }
 
 .page-actions__card,
+#page-actions-more__card,
 .oo-ui-defaultOverlay {
     z-index: 99999;
 }
