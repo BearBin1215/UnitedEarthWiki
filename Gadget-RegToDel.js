@@ -19,7 +19,8 @@ $(function () {
                 "text": "<noinclude>{{待删除}}</noinclude>",
                 "nocreate": true,
                 "watchlist": "nochange",
-                "summary": "标记待删除页面"
+                "summary": "标记待删除页面",
+                "contentmodel": "wikitext"
             });
             setTimeout(function () {
                 location.reload(false);
