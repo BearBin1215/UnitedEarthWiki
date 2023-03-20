@@ -1,6 +1,6 @@
 "use strict";
 /**
- * 引自萌娘百科小工具UserLinkAvatar：https://zh.moegirl.org.cn/MediaWiki:Gadget-UserLinkAvatar.css
+ * 引自萌娘百科小工具UserLinkAvatar：https://zh.moegirl.org.cn/MediaWiki:Gadget-UserLinkAvatar.js
  * 依CC BY-NC-SA 3.0引入，有修改
  */
 (function () {
