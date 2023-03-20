@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "removeComments": true,
+        "target": "ES3",
+        "outDir": "js-output",
+        "alwaysStrict": true,
+        "strict": true,
+        "downlevelIteration": true,
+        "incremental": true,
+        "tsBuildInfoFile": ".cache/.tsbuildinfo",
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "ignoreDeprecations": "5.0"
+    },
+    "include": [
+        "js",
+    ],
+    "exclude": [
+        "js-output",
+    ],
+}
