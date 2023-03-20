@@ -3,7 +3,7 @@
         "allowJs": true,
         "removeComments": true,
         "target": "ES3",
-        "outDir": "js-output",
+        "outDir": "gadget-output",
         "alwaysStrict": true,
         "strict": true,
         "downlevelIteration": true,
