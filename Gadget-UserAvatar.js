@@ -1,7 +1,7 @@
 "use strict";
 /**
  * 引自萌娘百科小工具UserLinkAvatar：https://zh.moegirl.org.cn/MediaWiki:Gadget-UserLinkAvatar.css
- * 依CC BY-NC-SA 3.0引入
+ * 依CC BY-NC-SA 3.0引入，有修改
  */
 (function () {
     var magnifierOn = +mw.user.options.get("gadget-userLinkAvatarMagnifier", 0) === 1;
