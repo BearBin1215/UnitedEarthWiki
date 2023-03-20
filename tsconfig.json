@@ -16,9 +16,9 @@
         "ignoreDeprecations": "5.0"
     },
     "include": [
-        "js",
+        "gadget",
     ],
     "exclude": [
-        "js-output",
+        "gadget-output",
     ],
 }
