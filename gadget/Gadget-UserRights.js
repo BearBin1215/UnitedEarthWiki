@@ -1,13 +1,13 @@
 "use strict";
 $(function () {
     var groups = {
-        bureaucrat: { list: [], class: "markrights-bureaucrat" },
-        suppress: { list: [], class: "markrights-suppress" },
-        sysop: { list: [], class: "markrights-sysop" },
-        'interface-admin': { list: [], class: "markrights-interface-admin" },
-        patroller: { list: [], class: "markrights-patroller" },
-        autoconfirmed: { list: [], class: "markrights-autoconfirmed" },
-        bot: { list: [], class: "markrights-bot" },
+        bureaucrat: { list: [], class: "user-rights-bureaucrat" },
+        suppress: { list: [], class: "user-rights-suppress" },
+        sysop: { list: [], class: "user-rights-sysop" },
+        'interface-admin': { list: [], class: "user-rights-interface-admin" },
+        patroller: { list: [], class: "user-rights-patroller" },
+        autoconfirmed: { list: [], class: "user-rights-autoconfirmed" },
+        bot: { list: [], class: "user-rights-bot" },
     };
     var markUG = function () {
         var $users = $('a.mw-userlink:not(.mw-anonuserlink)');

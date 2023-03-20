@@ -1,29 +1,29 @@
-.markrights-bureaucrat:after {
-	color: black;
+.user-rights-bureaucrat:after {
+	color: #003366;
 	content: "政";
 }
 
-.markrights-suppress:after {
-	color: purple;
+.user-rights-suppress:after {
+	color: #8B4513;
 	content: "监";
 }
 
-.markrights-sysop:after {
-	color: mediumvioletred;
+.user-rights-sysop:after {
+	color: #008B8B;
 	content: "管";
 }
 
-.markrights-patroller:after {
-	color: sienna;
+.user-rights-patroller:after {
+	color: #006400;
 	content: "巡";
 }
 
-.markrights-interface-admin:after {
-	color: mediumvioletred;
+.user-rights-interface-admin:after {
+	color: #30D5C8;
 	content: "界";
 }
 
-.markrights-bot:after {
+.user-rights-bot:after {
 	color: blue;
 	content: "机";
 }
