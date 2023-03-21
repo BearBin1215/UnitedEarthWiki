@@ -1,2 +1,3 @@
-'use strict';
+"use strict";
+
 $('.sysop-only').removeClass('sysop-only');

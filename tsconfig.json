@@ -3,7 +3,7 @@
         "allowJs": true,
         "removeComments": true,
         "target": "ES3",
-        "outDir": "gadget-output",
+        "outDir": "js-output",
         "alwaysStrict": true,
         "strict": true,
         "downlevelIteration": true,
@@ -16,9 +16,9 @@
         "ignoreDeprecations": "5.0"
     },
     "include": [
-        "gadget",
+        "gadget"
     ],
     "exclude": [
-        "gadget-output",
+        "js-output",
     ],
 }

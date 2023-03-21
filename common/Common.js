@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 // 移除首页标题下的欢迎语
 $(function () {

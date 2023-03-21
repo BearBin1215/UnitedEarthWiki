@@ -8,8 +8,8 @@
 - [group](group)中为针对用户组生效的源代码。
 
 ### 代码规范
-- js代码使用[tsconfig.json](tsconfig.json)中的规则进行编译以兼容MediaWiki。
-- css代码使用[.stylelintrc.json](.stylelintrc.json)中的规则进行格式化。
+- 若js代码以ES6标准进行编写，请使用[tsconfig.json](tsconfig.json)中的规则进行编译以兼容ES3标准，编译后请在头尾加上被注释的`<pre>`或`<nowiki>`以免其中源代码（诸如3个波浪号）被自动解析。
+- css代码使用[.stylelintrc.json](.stylelintrc.json)中的规则进行格式化。格式化后的部分源代码直接复制到wiki上可能会出现报错或警告，请直接无视。
 
 ### 参与维护
 - 您可以直接在本仓库Pull Request，亦可在地球联合百科的相应页面提交编辑请求。

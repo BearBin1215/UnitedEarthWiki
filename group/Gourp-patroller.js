@@ -1,5 +1,5 @@
 // <pre>
-'use strict';
+"use strict";
 
 $(function () {
     $('.patroller-only').removeClass('patroller-only');
