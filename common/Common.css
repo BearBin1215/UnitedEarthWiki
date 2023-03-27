@@ -375,6 +375,10 @@ td.mbox-empty-cell {
  * 方针提示模板（Policy note box）
  * 警告模板（Warning note box）
 ---------------------------------------- */
+.nbox {
+    display: flow-root
+}
+
 .nbox>div {
     display: flex;
     align-items: center;
