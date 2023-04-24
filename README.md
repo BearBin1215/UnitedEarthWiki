@@ -8,7 +8,7 @@
 - [group](group)中为针对用户组生效的源代码。
 
 ### 代码规范
-- 若js代码以ES6标准进行编写，请使用[tsconfig.json](tsconfig.json)中的规则进行编译以兼容ES3标准，编译后请在头尾加上被注释的`<pre>`或`<nowiki>`以免其中源代码（诸如3个波浪号）被自动解析：
+- js代码请使用[tsconfig.json](tsconfig.json)中的规则进行编译以兼容ES3标准，编译后请在头尾加上被注释的`<pre>`或`<nowiki>`以免其中源代码（诸如3个波浪号）被自动解析：
     ```javascript
     // <pre>
 
