@@ -1,19 +1,16 @@
 /**
  * 全站css，应用于所有用户的所有皮肤。
  */
-
-
 /* 全局变量
 ---------------------------------------- */
 :root {
-    --global-border-color: #2a52be;
-    --global-border: 3px solid var(--global-border-color);
-    --global-background-color: #2a52be;
-    --notebox-background-color: #eaeff2;
-    --box-border-radius: 0.5em;
-    --box-inner-border-radius: 0.3em;
+--global-border-color: #2a52be;
+--global-border: 3px solid var(--global-border-color);
+--global-background-color: #2a52be;
+--notebox-background-color: #eaeff2;
+--box-border-radius: 0.5em;
+--box-inner-border-radius: 0.3em;
 }
-
 
 /* 页面基础
 ---------------------------------------- */
@@ -50,8 +47,9 @@
     margin-bottom: .8em;
 }
 
-pre, .mw-code {
-    font-family: Consolas, "JetBrains Mono", "Source Code Pro", 'Courier New', monospace;
+pre,
+.mw-code {
+    font-family: Consolas, "JetBrains Mono", "Source Code Pro", "Menlo", "Consolas", "Courier New", monospace;
 }
 
 /* 常用类
@@ -68,69 +66,17 @@ pre, .mw-code {
     margin-top: 0;
 }
 
-
-/* Message box templates
+/* Message Box
 ---------------------------------------- */
 .messagebox {
-    border: 1px solid #a2a9b1;
-    background: #f8f9fa;
+    border: 1px solid var(--global-border-color);
+    padding: 0.2em 1em;
+    background: rgb(42 82 190 / 2%);
+    border-radius: var(--box-inner-border-radius);
     width: 80%;
-    margin: 0 auto 1em;
-    padding: 0.2em;
+    margin: auto;
     text-align: justify;
 }
-
-.messagebox.merge {
-    border: 1px solid #cf9fff;
-    background: #f5edf5;
-    text-align: center;
-}
-
-.messagebox.cleanup {
-    border: 1px solid #9f9fff;
-    background: #efefff;
-    text-align: center;
-}
-
-.messagebox.standard-talk {
-    border: 1px solid #c0c090;
-    background: #f8eaba;
-}
-
-/* Cell sizes for ambox/tmbox/imbox/cmbox/ombox/fmbox/dmbox message boxes */
-th.mbox-text,
-td.mbox-text {
-    /* The message body cell(s) */
-    border: none;
-    padding: 0.25em 0.9em;
-    /* 0.9em left/right */
-    width: 100%;
-    /* Make all mboxes the same width regardless of text length */
-}
-
-td.mbox-image {
-    /* The left image cell */
-    border: none;
-    padding: 2px 0 2px 0.9em;
-    /* 0.9em left, 0px right */
-    text-align: center;
-}
-
-td.mbox-imageright {
-    /* The right image cell */
-    border: none;
-    padding: 2px 0.9em 2px 0;
-    /* 0px left, 0.9em right */
-    text-align: center;
-}
-
-td.mbox-empty-cell {
-    /* An empty narrow cell */
-    border: none;
-    padding: 0;
-    width: 1px;
-}
-
 
 /* File模板
 ---------------------------------------- */
@@ -167,7 +113,6 @@ td.mbox-empty-cell {
     background: rgb(42 82 190 / 2%);
     border-radius: var(--box-inner-border-radius);
 }
-
 
 /* 信息栏
 ---------------------------------------- */
@@ -237,12 +182,10 @@ td.mbox-empty-cell {
     justify-content: center;
 }
 
-
 /* 底部导航
 ---------------------------------------- */
 .navbox {
     width: 100%;
-    background-color: var(--notebox-background-color);
     border: 2px solid var(--global-border-color);
     border-radius: var(--box-border-radius);
     border-collapse: separate;
@@ -369,11 +312,10 @@ td.mbox-empty-cell {
     color: #0645ad !important;
 }
 
-
 /* 各类提示模板
- * 条目提示模板（Article note box）
- * 方针提示模板（Policy note box）
- * 警告模板（Warning note box）
+    * 条目提示模板（Article note box）
+    * 方针提示模板（Policy note box）
+    * 警告模板（Warning note box）
 ---------------------------------------- */
 .nbox {
     display: flow-root
@@ -405,6 +347,11 @@ td.mbox-empty-cell {
 .anbox-title {
     font-size: 1.3em;
     font-weight: 600;
+    color: #000000;
+}
+
+.anbox-content {
+    color: #000000;
 }
 
 .anbox hr {
@@ -446,6 +393,7 @@ td.mbox-empty-cell {
 .wnbox-right,
 .tnbox-right {
     flex-grow: 1;
+    color: #000000;
 }
 
 .warning-sign {
@@ -457,6 +405,22 @@ td.mbox-empty-cell {
     font: 700 1.8em consolas, "JetBrains Mono", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Courier, monospace;
     line-height: 100%;
     border: 3px solid #9c0000;
+    border-radius: 50%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.info-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.8em;
+    height: 1.8em;
+    font: 700 1.8em consolas, "JetBrains Mono", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Courier, monospace;
+    line-height: 100%;
+    border: 3px solid #4488DD;
     border-radius: 50%;
     -webkit-user-select: none;
     -moz-user-select: none;
