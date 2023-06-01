@@ -4,12 +4,12 @@
 /* 全局变量
 ---------------------------------------- */
 :root {
---global-border-color: #2a52be;
---global-border: 3px solid var(--global-border-color);
---global-background-color: #2a52be;
---notebox-background-color: #eaeff2;
---box-border-radius: 0.5em;
---box-inner-border-radius: 0.3em;
+    --global-border-color: #2a52be;
+    --global-border: 3px solid var(--global-border-color);
+    --global-background-color: #2a52be;
+    --notebox-background-color: #eaeff2;
+    --box-border-radius: 0.5em;
+    --box-inner-border-radius: 0.3em;
 }
 
 /* 页面基础
@@ -426,4 +426,10 @@ pre,
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+/* [[Template:Tabs]]
+---------------------------------------- */
+.template-tabs {
+    border: 1px solid #ccc;
 }
