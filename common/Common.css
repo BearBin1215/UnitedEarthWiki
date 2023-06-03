@@ -1,13 +1,14 @@
 /**
- * 全站css，应用于所有用户的所有皮肤。
- */
+* 全站css，应用于所有用户的所有皮肤。
+*/
 /* 全局变量
 ---------------------------------------- */
 :root {
     --global-border-color: #2a52be;
-    --global-border: 3px solid var(--global-border-color);
+    --global-border: 2px solid var(--global-border-color);
     --global-background-color: #2a52be;
     --notebox-background-color: #eaeff2;
+    --subtitle-background-color: #5686bf;
     --box-border-radius: 0.5em;
     --box-inner-border-radius: 0.3em;
 }
@@ -69,7 +70,7 @@ pre,
 /* Message Box
 ---------------------------------------- */
 .messagebox {
-    border: 1px solid var(--global-border-color);
+    border: var(--global-border);
     padding: 0.2em 1em;
     background: rgb(42 82 190 / 2%);
     border-radius: var(--box-inner-border-radius);
@@ -127,6 +128,19 @@ pre,
 #infobox .infobox-title {
     font-size: 1.2em;
     min-width: 275px;
+    background-color: var(--global-background-color);
+    color: #fff;
+}
+
+#infobox .infobox-subtitle {
+    min-width: 275px;
+    background-color: var(--subtitle-background-color);
+    color: #fff;
+}
+
+#infobox .infobox-left {
+    background-color: var(--notebox-background-color);
+    color: var(--global-background-color);
 }
 
 #infobox .infobox-image img {
@@ -159,14 +173,12 @@ pre,
 #infobox th,
 #infobox td {
     border-radius: var(--box-inner-border-radius);
-    text-align: center;
 }
 
 #infobox th {
-    background-color: var(--global-background-color);
-    color: #fff;
     font-weight: 700;
     min-width: 5.3em;
+    text-align: center;
 }
 
 .infobox-inner-sprt {
@@ -217,8 +229,13 @@ pre,
     color: #fff;
 }
 
+.navbox-title {
+    background-color: var(--subtitle-background-color);
+    color: #fff;
+    border-radius: var(--box-inner-border-radius);
+}
+
 .navbox-name,
-.navbox-title,
 .navbox-bottom {
     background-color: var(--global-background-color);
     color: #fff;
@@ -268,7 +285,7 @@ pre,
 .right-nav-title {
     margin: 0.12em 0;
     padding: .1em;
-    background-color: var(--global-background-color);
+    background-color: var(--subtitle-background-color);
     border-radius: var(--box-inner-border-radius);
     color: #fff;
     font-weight: 700;
@@ -313,9 +330,9 @@ pre,
 }
 
 /* 各类提示模板
-    * 条目提示模板（Article note box）
-    * 方针提示模板（Policy note box）
-    * 警告模板（Warning note box）
+* 条目提示模板（Article note box）
+* 方针提示模板（Policy note box）
+* 警告模板（Warning note box）
 ---------------------------------------- */
 .nbox {
     display: flow-root
@@ -383,12 +400,14 @@ pre,
     padding: .05em .3em;
 }
 
+/*
 .pnbox-left img,
 .wnbox-left img,
 .tnbox-left img {
     width: 70px;
+    height: auto;
 }
-
+*/
 .pnbox-right,
 .wnbox-right,
 .tnbox-right {
@@ -405,22 +424,6 @@ pre,
     font: 700 1.8em consolas, "JetBrains Mono", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Courier, monospace;
     line-height: 100%;
     border: 3px solid #9c0000;
-    border-radius: 50%;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.info-sign {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1.8em;
-    height: 1.8em;
-    font: 700 1.8em consolas, "JetBrains Mono", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Courier, monospace;
-    line-height: 100%;
-    border: 3px solid #4488DD;
     border-radius: 50%;
     -webkit-user-select: none;
     -moz-user-select: none;
