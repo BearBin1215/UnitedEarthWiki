@@ -2,7 +2,7 @@
     "compilerOptions": {
         "allowJs": true,
         "removeComments": true,
-        "target": "ES3",
+        "target": "ES5",
         "outDir": "js-output",
         "alwaysStrict": true,
         "strict": true,
