@@ -1,5 +1,4 @@
 .vscode
-package-lock.json
-package.json
 .cache
 js-output
+node_modules
